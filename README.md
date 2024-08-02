@@ -15,7 +15,7 @@ PLUGINS+=fuzz.c
 
 ...
 
-LIBS+=-L<honggfuzz-roo>/libhfuzz/ -lhfuzz -lm -lunwind-ptrace -lunwind-aarch64 -lunwind -llzma -L<honggfuzz-root>/libhfcommon/ -lhfcommon -lrt -ldl -lpthread
+LIBS+=-L<honggfuzz-root>/libhfuzz/ -lhfuzz -lm -lunwind-ptrace -lunwind-aarch64 -lunwind -llzma -L<honggfuzz-root>/libhfcommon/ -lhfcommon -lrt -ldl -lpthread
 ```
 
 4. Build MAMBO with `make`.
